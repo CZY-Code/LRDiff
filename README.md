@@ -1,9 +1,4 @@
-# muralCompletion
-
-## Introduction
-Low-rank Structure Guided Diffusion for Mural Restoration
-
-## Overview
+# Low-rank Structure Guided Diffusion for Mural Restoration
 
 ## Installation
 
