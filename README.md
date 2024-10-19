@@ -1,7 +1,7 @@
 # muralCompletion
 
 ## Introduction
-Mural Image Completion with Tesnor Decomposition and Diffusion
+Low-rank Structure Guided Diffusion for Mural Restoration
 
 ## Overview
 
@@ -9,7 +9,7 @@ Mural Image Completion with Tesnor Decomposition and Diffusion
 
 1. Download source code:
     
-    `git clone https://gitee.com/czy-codelib/mural-completion.git`
+    `git clone https://github.com/CZY-Code/LRDiff.git`
 
 2.  Pip install dependencies:
     * OS: Ubuntu 20.04.6
@@ -31,4 +31,8 @@ Mural Image Completion with Tesnor Decomposition and Diffusion
     `python tdm/test.py`
     
 ## Acknowledgement
-1. XXXX
+This implementation is based on / inspired by:
+
+* [https://github.com/Algolzw/image-restoration-sde](https://github.com/Algolzw/image-restoration-sde) (Image Restoration SDE)
+* [https://github.com/andreas128/RePaint](https://github.com/andreas128/RePaint) (RePaint)
+* [https://github.com/htyjers/StrDiffusion](https://github.com/htyjers/StrDiffusion) (StrDiffusion)
