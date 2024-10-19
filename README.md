@@ -7,11 +7,13 @@ Low-rank Structure Guided Diffusion for Mural Restoration
 
 ## Installation
 
-1. Download source code:
+1. Download source code and dataset:
     
-    `git clone https://github.com/CZY-Code/LRDiff.git`
+    * `git clone https://github.com/CZY-Code/LRDiff.git`
+    * Download the dataset of from the [link](https://drive.google.com/file/d/1Twzrkkb9jEInpsrdrabB6RAcHagwZCVP/view?usp=drive_link)
+   
 
-2.  Pip install dependencies:
+3.  Pip install dependencies:
     * OS: Ubuntu 20.04.6
     * nvidia :
         - cuda: 12.1
@@ -20,13 +22,13 @@ Low-rank Structure Guided Diffusion for Mural Restoration
     * pytorch >= 2.1.0
     * Python packages: `pip install -r requirements.txt`
 
-3.  Dataset Preparation:
+4.  Dataset Preparation:
 
     * You can set the mask/LQ/GT path in [tdm/options/test/ir-sde-td.yml](https://gitee.com/czy-codelib/mural-completion/blob/master/tdm/options/test/ir-sde-td.yml#L26)
 
-4. Download the weight of network from the [link](https://drive.google.com/file/d/1lD1IAkwXbQP9ifum_3loldC-EBtYNQ2Q/view?usp=drive_link) and move it into the path which setted in [tdm/options/test/ir-sde-td.yml](https://gitee.com/czy-codelib/mural-completion/blob/master/tdm/options/test/ir-sde-td.yml#L52)
+5. Download the weight of network from the [link](https://drive.google.com/file/d/1lD1IAkwXbQP9ifum_3loldC-EBtYNQ2Q/view?usp=drive_link) and move it into the path which setted in [tdm/options/test/ir-sde-td.yml](https://gitee.com/czy-codelib/mural-completion/blob/master/tdm/options/test/ir-sde-td.yml#L52)
 
-5. Run the following command to test performance:
+6. Run the following command to test performance:
 
     `python tdm/test.py`
     
