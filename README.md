@@ -19,7 +19,7 @@
 
 4.  Dataset Preparation:
 
-    * You can set the mask/LQ/GT path in [tdm/options/test/ir-sde-td.yml](https://gitee.com/czy-codelib/mural-completion/blob/master/tdm/options/test/ir-sde-td.yml#L26)
+    * You can set the mask/LQ/GT path in [tdm/options/test/ir-sde-td.yml](https://github.com/CZY-Code/LRDiff/blob/a950d090ff1ce918910198205630b24207eb28eb/tdm/options/test/ir-sde-td.yml#L25)
 
 5. Download the weight of network from the [link](https://drive.google.com/file/d/1lD1IAkwXbQP9ifum_3loldC-EBtYNQ2Q/view?usp=drive_link) and move it into the path which setted in [tdm/options/test/ir-sde-td.yml](https://gitee.com/czy-codelib/mural-completion/blob/master/tdm/options/test/ir-sde-td.yml#L52)
 
