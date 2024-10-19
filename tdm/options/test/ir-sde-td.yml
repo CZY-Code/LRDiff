@@ -1,0 +1,52 @@
+#### general settings
+name: ir-sde
+suffix: ~  # add suffix to saved images
+model: denoising
+distortion: derain
+gpu_ids: [0,1,2,3]
+batch_size: &batch_size 1
+GT_size: &GT_size 256
+
+sde:
+  max_sigma: 30
+  T: 100
+  schedule: cosine
+  eps: 0.005
+
+degradation:
+  mask_root: /home/chengzy/mural-completion/dataset/muralV3test/Masks/
+  
+  
+#### datasets
+datasets:
+  test:
+    name: Val_Dataset
+    mode: GT
+    dataroot_GT: /home/chengzy/mural-completion/dataset/muralV3test/Images/
+    dataroot_LQ: /home/chengzy/mural-completion/dataset/muralV3test/Degraded/
+    dataroot_Mask: /home/chengzy/mural-completion/dataset/muralV3test/Masks/
+    origin_mask: True
+    origin_size: 768
+    GT_size: *GT_size
+    batch_size: *batch_size
+    segment: False
+
+#### network structures
+network_G:
+  which_model_G: ConditionalUNet
+  setting:
+    in_nc: 3
+    out_nc: 3
+    nf: 64
+    depth: 4
+    
+tensordec: tucker
+TDNet:
+  ranks: [128, 128, 16]
+  algo: NN
+  mid_channel: 128
+  max_iter: 3000
+
+
+path:
+  pretrain_model: /home/chengzy/mural-completion/models/0903.pth
