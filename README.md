@@ -1,4 +1,4 @@
-# Low-rank Structure Guided Diffusion for Mural Restoration
+# Low-rank Structure Guided Diffusion for Shaanxi Temple Mural Restoration
 
 ## Installation
 
